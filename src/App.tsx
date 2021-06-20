@@ -12,7 +12,14 @@ export interface IState {
 }
 
 export default function App() {
-const [students, setStudents] = useState<IState["students"]>([])
+const [students, setStudents] = useState<IState["students"]>([
+  {
+    name: "Maudy",
+    url:"http://bisnisnews.id/core/images/uploads/gambar-20200914_Jp58ul.jpg",
+    age: 25,
+    note: "hay hay hay"
+  }
+])
 
   return (
     <div className="App">
