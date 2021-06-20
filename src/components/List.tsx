@@ -5,7 +5,7 @@ const List: React.FC<IProps> = ({students}) => {
 
     const renderList = (): JSX.Element[] => {
         return students.map(student => 
-            <li className="List">
+            <li key={student.name} className="List">
                 <div className="List-header">
                     <img className="List-img" src={student.url} alt="" />
                     <h2>{student.name}</h2>

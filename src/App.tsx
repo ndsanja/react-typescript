@@ -1,6 +1,7 @@
 import  "./App.css"
 import React, {useState} from 'react'
 import List from "../src/components/List"
+import AddToList from "./components/AddToList"
 
 export interface IState {
   students : {
@@ -25,6 +26,7 @@ const [students, setStudents] = useState<IState["students"]>([
     <div className="App">
       <h1>Student List</h1>
       <List students={students}/>
+      <AddToList students={students} setStudents={setStudents}/>
     </div>
   )
 }
